@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Dummy API">
+        <classes>
+            <class name="DummyAPI.DummyApis">
+                <methods>
+                    <include name="employeeList"/>
+                    <include name="singleEmployee"/>
+                    <include name="createEmployee"/>
+                    <include name="updateEmployee"/>
+                    <include name="deleteEmployee"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
