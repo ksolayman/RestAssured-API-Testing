@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="ReqRes RestAssured">
+        <classes>
+            <class name="HTTPResquest.HttpRequest">
+                <methods>
+                    <include name="listUsers"/>
+                    <include name="singleUser"/>
+                    <include name="singleUserNotFound"/>
+                    <include name="listResource"/>
+                    <include name="singleResource"/>
+                    <include name="singleResourceNotFound"/>
+                    <include name="createUser"/>
+                    <include name="createNewUser"/>
+                    <include name="registerSuccessful"/>
+                    <include name="registerUnsuccessful"/>
+                    <include name="loginSuccessful"/>
+                    <include name="loginSUnsuccessful"/>
+                    <include name="delayResponse"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
